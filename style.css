@@ -136,44 +136,54 @@
    html, body {font-size: 100%;}
 
 
-  /* TYPESCALE for MOBILE 
+/* TYPESCALE for MOBILE 
     https://spencermortensen.com/articles/typographic-scale/  */
 
 
-  h1 { font-size: 2.5em; }
-  h2 { font-size: 2.1459em; }
-  h3 { font-size: 1.842em; }
-  h4 { font-size: 1.5811em; }
-  h5 { font-size: 1.3572em; }
-  h6 { font-size: 1.165em; }
-  p { font-size: 1em; }
-  small { font-size: .8584em; }
+    h1 { font-size: 1.9em; }
+    h2 { font-size: 1.7072em; }
+    h3 { font-size: 1.534em; }
+    h4 { font-size: 1.3784em; }
+    h5 { font-size: 1.2386em; }
+    h6 { font-size: 1.1129em; }
+    p { font-size: 1em; }
+    small { font-size: .8985em; }
+    
+    legend {font-size: 1.842em; }  /* h3 */
+    label {font-size: 1.5811em;}  /* h4 */
+    figcaption { font-size: .8584em;}  /* small */
+    
+    
+    
+    @media screen and (min-width: 60rem) {
+    
+    /* TYPESCALE for DESKTOP: ADD CONTRAST   */
+    
+    h1 { font-size: 3.558em; }
+    h2 { font-size: 2.8796em; }
+    h3 { font-size: 2.3306em; }
+    h4 { font-size: 1.8863em; }
+    h5 { font-size: 1.5266em; }
+    h6 { font-size: 1.2356em; }
+    small { font-size: .8093em; }
+    
+    legend {font-size: 2.3306em; } /* h3 */
+    label {font-size: 1.8863em;}   /* h4 */
+    figcaption { font-size: .8093em;}  /* small */
+    
+    } /* always add a comment next to the closing media query bracket 
+         so you don't delete it accidentally */
   
-  h1 {
-    margin: 1em 0 0.7em 0.3em;
-    line-height: 1.2;
-  }
+         figcaption {
+          font-size: .8584em;
+          text-align: right;
+          font-style: italic;
+          margin-top: 0;
+      
+          position: relative; /* when margins are zero, you can still tweak */
+          top: -0.3rem;
+      }
 
-h2 {margin: 2em 0 2em 0;}
-
-h3 {margin: 2em 0 2em 0;}
-
-h2 + h3 {
-  margin: 1.4em 0 1em 0;
-}
-
-h4 {margin: 2em 0 2em 0;}
-
-h5 {margin: 2em 0 2em 0;}
-
-h6 {margin: 2em 0 2em 0;}
-
-p {margin: 0 0 1em 0;}
-
-  legend {font-size: 1.842em; }
-  label {font-size: 1.581em;}
-  figcaption { font-size: .8584em;}
-  
  /*   ADJUST ABOVE VALUES ACCORDING TO YOUR FONT OF CHOICE, TESTED AT 320PX   
       ON THE ** WIDEST PAGE TITLE IN THE SITE **      */
   
@@ -256,19 +266,24 @@ header .branding {
   
   
  h1 {
-  margin: 1em 0 0.7em 0.3em;
+  margin: 1.6em 0 0.7em 0em;
   line-height: 1.2;
 }
 
-h2 {margin: 2em 0 2em 0;}
+h2 {margin: 1em 0 1em 0;
+line-height: 1;}
 
-h3 {margin: 2em 0 2em 0;}
+h3 {margin: 1em 0 1em 0;
+line-height: 2;}
 
-h4 {margin: 2em 0 2em 0;}
+h4 {margin: 1em 0 1em 0;
+line-height: 1;}
 
-h5 {margin: 2em 0 2em 0;}
+h5 {margin: 1em 0 1em 0;
+line-height: 1;}
 
-h6 {margin: 2em 0 2em 0;}
+h6 {margin: 1em 0 1em 0;
+line-height: 1;}
 
 p {margin: 0 0 1em 0;}
 
@@ -378,7 +393,15 @@ legend {}
 
 
 
+ul {
+  margin: 1rem 0 1rem 2rem;  /* note the 2rem at left */
+  list-style-type: disc;
+}
 
+ol {
+  margin: 1rem 0 1rem 2rem;
+  list-style-type: decimal;
+}
 
 /* ===================  START TOP NAV CODE ======================= */
 
