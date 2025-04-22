@@ -266,14 +266,14 @@ header .branding {
   
   
  h1 {
-  margin: 1.6rem 0 0.7rem 1rem;
+  margin: 1.6rem 1rem 0.7rem 1rem;
   line-height: 1.2;
 }
 
-h2 {margin: 1rem 0 1rem 1rem;
+h2 {margin: 3rem 0 1rem 1rem;
 line-height: 1;}
 
-h3 {margin: 3rem 0 0.5rem 1rem;
+h3 {margin: 1rem 0 0.5rem 1rem;
 line-height: 2;}
 
 h4 {margin: 1rem 0 1rem 1rem;
@@ -285,22 +285,29 @@ line-height: 1;}
 h6 {margin: 1rem 0 1rem 1rem;
 line-height: 1;}
 
-p {margin: 0 0 3rem 1rem;}
+p {margin: 0 1rem 3rem 1rem;}
 
 ul {
   list-style-type: circle;
-  margin-left: 1rem;
+  margin-left: 2rem;
 }
 
 ol {
   list-style-type: decimal;
-  margin-left: 1rem;
+  margin-left: 2rem;
 }
 
 address {
   line-height: 2;
   margin-left: 1.5rem;
 }
+
+h2 + h3 {
+  margin: 0 1rem 0.5rem 1rem;
+  }
+  h2:has(+ h3) {
+  margin: 3rem 0 0 1rem;
+  }
 
 label {}
 
