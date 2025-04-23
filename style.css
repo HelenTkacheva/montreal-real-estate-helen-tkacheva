@@ -67,6 +67,10 @@
 */
 
 
+@import url(css/mobile-nav.css);
+@import url(css/desktop-nav.css);
+@import url(css/contact.css);
+
 /* COLOR PALETTE & FONTS VARIABLES  */
 
 :root {
@@ -298,7 +302,7 @@ ol {
 }
 
 address {
-  line-height: 2;
+  line-height: 1;
   margin-left: 1.5rem;
 }
 
